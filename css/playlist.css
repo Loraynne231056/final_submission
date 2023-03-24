@@ -1,0 +1,30 @@
+.logo{
+    float: left;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.nav-con{
+    float: right;
+    margin-right: 100px;
+    width: 1000px;
+}
+.nav-con ul{
+    list-style: none;
+}
+.nav-con li{
+    float: left;
+    margin-left: 20px;
+    padding-top: 20px;  
+} 
+.button{
+    float: right;
+    margin-left: 200px;
+}
+
+.favourite-mix{
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+    background-color: gray;
+    padding-right: 50px;
+}
