@@ -9,6 +9,10 @@
     <!--External Sources-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!--Internal Sources-->
     <link rel="stylesheet" href="../css/about.css">
@@ -16,32 +20,52 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <h3>STREAM</h3>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-2">
+                <div class="logo">
+                    <a href="../index.html"><img style="width: 80%;height: 80%;" src="../assets/stream_logo_white.png" alt="company logo"></a>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="nav-con">
+                    <ul>  
+                        <li>Recent Releases</li>
+                        <li>Popular Albums</li>
+                        <a href="about.html"><li class="active">About Label</li></a>
+                        <a href="../pages/playlist.html"><li>My Playlists</li></a>  
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="button">
+                    Search...
+                    <img src="../assets/search_icon.svg" alt="search icon">
+                </div>
+            </div>
+            </div>
         </div>
-
-        <div class="nav-con">
-            <ul>  
-                <li>Recent Releases</li>
-                <li>Popular Albums</li>
-                <a href="about.html"><li>About Label</li></a>
-                <a href="../pages/playlist.html"><li>My Playlists</li></a>  
-            </ul>
-            <div class="button">Search</div>
-        </div>    
-    </nav>
+    </nav>  
 
     <div class="container">
         <div class="row">
             <div class="col-6">
                 <div class="about-box">
                     <h5>This Is Us</h5>
-                    <h3>STREAM</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia consequatur illum dolorum. Modi rem iure, minima nihil hic eveniet iste. Eum accusantium numquam ducimus quis ipsam, laborum sit voluptatum.</p>
-                    <div class="email-icon"></div>
-                    <div class="phone-icon"></div>
-                    <div class="map">
-                        <iframe style="width: 500px; height: 200px;"   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d327109.67942453426!2d22.845616013133203!3d-27.308018536548783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9fc6e1b9f70a9b%3A0x73406320c5abdfe4!2sHotazel%2C%208490!5e0!3m2!1sen!2sza!4v1679665818955!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h1>STREAM</h1>
+                    <p>Welcome to STREAM the only Alternative Rock and Jpop streaming service you will ever need! The one stop shop for all your Jpop bops, we're all about bringing you the best songs. You can find anything you want from the latest hits to the golden oldies right here on STREAM!</p>
+                    <div class="media-box">
+                        <div class="email-box">
+                            <img src="../assets/email_icon.svg">
+                            <p>info@stream.co</p>
+                        </div>
+                        <div class="phone-box">
+                            <img src="../assets/phone_icon.svg">
+                            <p>2103894992</p>
+                        </div>
+                    </div>
+                    <div class="map-box">
+                        <iframe style="width: 100%; height: 217px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.3210306023393!2d28.20736471484329!3d-25.891815057633426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window!5e0!3m2!1sen!2sza!4v1681032103515!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -50,20 +74,29 @@
                     <form>
                         <h3>GET IN TOUCH</h3>  
                         <input class="input-el" type="text" placeholder="Your Name">
-                        <input class="input-el" type="email" placeholder="Your Email">
+                        <input class="input-el" type="email" placeholder="Your Email" required>
                         <select class="input-el">
                           <option>Subject</option>
                           <option>Subject 1</option>
                           <option>Subject 2</option>
                         </select>
-                        <textarea class="input-el" placeholder="Your Message" rows="3"></textarea>
+                        <textarea row= "3" class="input-el area" placeholder="Your Message"></textarea>
+                        <button class="btn-el" type="submit" selected="selected"><h4>Play</h4></button>
                       </form>
                 </div>
             </div>
         </div> 
      </div>    
      <footer>
-        <h5>STREAM C 2021</h5>
+        <div class="text">
+            <h5>STREAM C 2021</h5>
+        </div>
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="blank"><img src="../assets/youtube_icon.svg" alt=""></a>
+            <a href="https://www.facebook.com/" target="blank"><img src="../assets/facebook_icon.svg" alt=""></a>
+            <a href="https://twitter.com/" target="blank"><img src="../assets/twitter_icon.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="../assets/instagram_icon.svg" alt=""></a>
+        </div>
     </footer> 
 </body>
 </html>

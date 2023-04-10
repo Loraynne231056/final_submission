@@ -9,32 +9,47 @@
     <!--External Sources-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!--Internal Sources-->
     <link rel="stylesheet" href="css/main.css">
  
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <h3>STREAM</h3>
-        </div>
-
-        <div class="nav-con">
-            <ul>  
-                <li>Recent Releases</li>
-                <li>Popular Albums</li>
-                <a href="pages/about.html"><li>About Label</li></a>
-                <a href="pages/playlist.html"><li>My Playlists</li></a>  
-            </ul>
-            <div class="button">Search...</div>
-        </div>
-    </nav>
-
-    <header> 
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-2">
+                    <div class="logo">
+                        <a href="index.html"><img style="width: 80%;height: 80%;" src="assets/stream_logo_white.png" alt="company logo"></a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="nav-con">
+                        <ul>  
+                            <a href="#txt"><li>Recent Releases</li></a>
+                            <a href="#popular"><li>Popular Albums</li></a>
+                            <a href="pages/about.html"><li>About Label</li></a>
+                            <a href="pages/playlist.html"><li>My Playlists</li></a>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="button">
+                        Search...
+                        <img src="assets/search_icon.svg" alt="search icon">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </nav>
         <div class="overlay-header">
-            <h3>Artist</h3>
-            <h1>ALBUM NAME</h1>
+            <h3>Asian Kung Fu Generation</h3>
+            <h1>Planet Folks</h1>
 
                 <div class="btn inverted"><h5>PLAY</h5></div>
                 <div class="btn normal"><h5>SHUFFLE</h5></div>
@@ -54,9 +69,9 @@
             <div class="col-6">
                 <div class="col-right">
                     <div class="text">
-                        <h5>Featured Artists</h5>
-                        <h1>ARTIST NAME</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus. Suscipit minus ipsum obcaecati sit cumque repellat distinctio ipsa ipsam id exercitationem hic sequi dolores alias reiciendis iusto, nesciunt nostrum.</p>
+                        <h5>Featured Artist</h5>
+                        <h2>Asian Kung Fu Generation</h2>
+                        <p>Planet Folks is the tenth studio album by Japanese rock band Asian Kung-Fu Generation, released on March 30, 2022 through Sony Music subsidiary Ki/oon Music. The album was preceded by six singles, including Dororo, which was the opening for the anime series of the same title.</p>
                     </div>
                     <div class="btn-slider">
                         <img src="assets/left_arrow_icon.svg" alt="left arrow icon">
@@ -65,62 +80,272 @@
                 </div>
             </div>
         </div>
-
+    <section>
         <div id="txt">
             <h3>Recent Releases</h3>
         </div>
 
         <div class="row">
-            <div class="col-3">
-                    <div class="col-box video-one"></div>
-            </div>
-            <div class="col-3">
-                <div class="col-box two"></div>
-            </div>
-            <div class="col-3">
-                <div class="col-box three"></div>
-            </div>
-            <div class="col-3">
-                <div class="col-box four"></div>
-            </div>
+            
+                <div class="col-3">
+                        <div class="col-box video-one">
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="assets/play_icon.svg" alt="play icon">
+                                </div>
+                                
+                                <div class="content">
+                                    <div class="skrif">
+                                        <p>Yankee</p>
+                                        <h4>Kenshi Yonezu</h4>
+                                    </div>
+                                    <div class="like">
+                                        <img style="width: 40px; height: 40px;"src="assets/heart_icon.svg" alt="Heart Icon">
+                                    </div> 
+                                </div>  
+                            </div>
+                        </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-box two">
+                        <div class="overlay">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>Ginger</p>
+                                    <h4>Tomoo</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-box three">
+                        <div class="overlay">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>Who?</p>
+                                    <h4>Ikimono Gakari</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-box four">
+                        <div class="overlay">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>Mix Tape</p>
+                                    <h4>Chilli Beans</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;"src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            
         </div>
-
+    </section>
+    <section>
         <div id="popular">
-            <h3>Popular Albumns</h3>
+            <h3>Popular Albums</h3>
         </div>
 
         <div class="row">
-            <div class="col-3">
-                <div class="col-box video-two"></div>
-            </div>
-            <div class="col-3">
-                <div class="col-box iitwo"></div>
-            </div>
-            <div class="col-3">
-                <div class="col-box iithree"></div>
-            </div>
-            <div class="col-3">
-                <div class="col-box iifour"></div>
-            </div>
+                <div class="col-3">
+                    <div class="col-box video-two">
+                        <div class="overlay">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>Love All Serve All</p>
+                                    <h4>Fuji Kaze</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-box iitwo">
+                        <div class="overlay">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>Dance Alone</p>
+                                    <h4>Chilli Beans</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-box iithree">
+                        <div class="overlay">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>荒野を歩け</p>
+                                    <h4>Asian Kung Fu...</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-box iifour">
+                        <div class="overlay">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>Strobo</p>
+                                    <h4>Vaundy</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+           
+        </div>
         </div>
 
         <div class="row">
-            <div class="col-3">
-                    <div class="col-box video-three"></div>
-            </div>
-            <div class="col-3">
-                    <div class="col-box iiione"></div>
-            </div>
-            <div class="col-3">
-                    <div class="col-box iiitwo"></div>
-            </div>
-            <div class="col-3">
-                    <div class="col-box iiithree"></div>
-            </div>
+            
+                <div class="col-3">
+                        <div class="col-box video-three">
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="assets/play_icon.svg" alt="play icon">
+                                </div>
+                                
+                                <div class="content">
+                                    <div class="skrif">
+                                        <p>E-Side</p>
+                                        <h4>Yoasobi</h4>
+                                    </div>
+                                    <div class="like">
+                                        <img style="width: 40px; height: 40px;"src="assets/heart_icon.svg" alt="Heart Icon">
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                </div>
+                <div class="col-3">
+                        <div class="col-box iiione">
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="assets/play_icon.svg" alt="play icon">
+                                </div>
+                                
+                                <div class="content">
+                                    <div class="skrif">
+                                        <p>Chilli Beans</p>
+                                        <h4>Chilli Beans</h4>
+                                    </div>
+                                    <div class="like">
+                                        <img style="width: 40px; height: 40px;"src="assets/heart_icon.svg" alt="Heart Icon">
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                </div>
+
+            <!--IDK what happened here bro-->
+
+                <div class="col-3">
+                        <div class="col-box tomoo">
+                            <div class="icon">
+                                <img src="assets/play_icon.svg" alt="play icon">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="skrif">
+                                    <p>Topaz</p>
+                                    <h4>Tomoo</h4>
+                                </div>
+                                <div class="like">
+                                    <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                </div> 
+                            </div> 
+                        </div>
+                </div>
+                <div class="col-3">
+                        <div class="col-box iiithree">
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="assets/play_icon.svg" alt="play icon">
+                                </div>
+                                
+                                <div class="content">
+                                    <div class="skrif">
+                                        <p>Sheep</p>
+                                        <h4>Kenshi Yonezu</h4>
+                                    </div>
+                                    <div class="like">
+                                        <img style="width: 40px; height: 40px;" src="assets/heart_icon.svg" alt="Heart Icon">
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                </div>
         </div>
-     </div>    
+    </section>
+    </div>    
+
     <footer>
-        <h5>STREAM C 2021</h5>
+        <div class="text">
+            <h5>STREAM C 2021</h5>
+        </div>
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="blank"><img src="assets/youtube_icon.svg" alt=""></a>
+            <a href="https://www.facebook.com/" target="blank"><img src="assets/facebook_icon.svg" alt=""></a>
+            <a href="https://twitter.com/" target="blank"><img src="assets/twitter_icon.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="assets/instagram_icon.svg" alt=""></a>
+        </div>
     </footer> 
 </body>
 </html>
+
+<!--I'm going to sleep now TT-->
